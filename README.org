@@ -1,0 +1,40 @@
+#+startup: content
+* AGVUDP - Patched Font: 'Agave' + Morisawa BIZ UDGothic + some icon fonts.
+** Overview
+
+   The fonts "AGVUDP" is based *[[https://github.com/blobject/agave][agave]]*
+   and add glyphs of Japanese from *[[https://github.com/googlefonts/morisawa-biz-ud-gothic][Morisawa BIZ UDGothic]]*,
+   and patched icon fons into Private Use Area.
+** Build
+*** Requirements
+    - make
+    - python3:
+    - python3-concurrent: for parallel builds
+    - python3-fontforge
+    - unar: expand donwload files
+*** Ubuntu 19.04, Debian (>= 10.0)
+    #+begin_src shell
+sudo apt install make wget unar python3 python3-concurrent.futures python3-fontforge
+make
+    #+end_src
+    check =dists= directory.
+** Font sources
+   Note:
+   All brand icons are trademarks of their respective owners and should
+   only be used to represent the company or product to which they refer.
+
+   Base fonts:
+   |-----------------------+---------+--------------|
+   | Name                  | Version | License      |
+   |-----------------------+---------+--------------|
+   | [[https://github.com/blobject/agave][agave]]                 | v37     | [[https://github.com/blobject/agave/blob/master/LICENSE][MIT]]          |
+   | [[https://github.com/googlefonts/morisawa-biz-ud-gothic][Morisawa BIZ UDGothic]] | v1.002  | [[https://github.com/googlefonts/morisawa-biz-ud-gothic/blob/main/OFL.txt][SIL OFL v1.1]] |
+   | [[https://github.com/eosrei/twemoji-color-font][twemoji color font]]    | v13.1   | [[https://github.com/eosrei/twemoji-color-font/blob/master/LICENSE-CC-BY.txt][CC BY-4.0]]    |
+   |-----------------------+---------+--------------|
+
+   Icon fontset: @see [[https://github.com/uwabami/isfit-plus][isfit+]]
+
+** References.
+
+   Original build scripts provided by [[https://github.com/delphinus/homebrew-sfmono-square][SFMono Square - patched font: SFMono + Migu 1M + Nerd Fonts]].
+   Thanks to great scripts!
